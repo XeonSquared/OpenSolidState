@@ -13,6 +13,7 @@ object Items {
     lateinit var Flash : OssmFlash
     lateinit var SocTemplate : OssmSocTemplate
     lateinit var SoC : OssmSoc
+    lateinit var Mux: BigIronMuxCard
 
     fun load(evt :  RegistryEvent.Register<Item>) {
         val ldr = OSSMClassLoader<OssmBaseItem>(OssmBaseItem::class, "net.shadowkat.minecraft.opensolidstate.common.items", arrayOf("OssmBaseItem")) { cls, path ->
